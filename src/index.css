@@ -1,0 +1,37 @@
+/* .card img{
+    height: 13vw;
+} */
+/* .card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} */
+.newsBox{
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+}
+.badge {
+    background: black;
+}
+/* .card-text{
+    height: 7rem;
+} */
+.heading{
+    margin-Top : '6rem';
+    margin-Bottom : '1.5rem'
+}
+#uparr {
+    position: fixed;
+    z-index: 5;
+    bottom: 42px;
+    right: 34px;
+    border-radius: 50%;
+    width: 47px;
+}
+#uparr:hover{
+    opacity: 0.9;
+}
+#uparr:active{
+    opacity: 0.8;
+}
