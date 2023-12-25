@@ -10,6 +10,7 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
+import Error from './Components/Error';
 
 const App = () => {
 
@@ -42,7 +43,6 @@ const App = () => {
     <div>
       <Router>
         <Navbar toggleMode={toggleMode} value={value}/>
-        console.log(value)
         <LoadingBar
           color='#f11946'
           progress={progress}
@@ -61,6 +61,8 @@ const App = () => {
           <Route exact path="/News-Rabbit/sports" element={<News value={value} mode={mode} setProgress={setProgress} key='sports' apiKey={apiKey} pageSize={size} category={'sports'} title={'sports'} />} />
 
           <Route exact path="/News-Rabbit/technology" element={<News value={value} mode={mode} setProgress={setProgress} key='technology' apiKey={apiKey} pageSize={size} category={'technology'} title={'technology'} />} />
+
+          <Route exact path="*" element={<Error mode={mode} />} />
           
         </Routes>
       </Router>
