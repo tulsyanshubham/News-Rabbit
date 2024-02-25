@@ -12,7 +12,7 @@ const Newsitem = (props) => {
             </span>
           </div>
             <img src={imageURL} className="card-img-top" alt="..." style={{backgroundColor : props.mode==='dark'?'rgb(29 34 38)':'white',borderBottom : '1px solid white'}}/>
-            <div className={`card-body text-${props.mode==='dark'?'light':'dark'}`} style={{backgroundColor : props.mode==='dark'?'rgb(29 34 38)':'white' , borderBottomLeftRadius: '2%',borderBottomRightRadius: '2%'}}>
+            <div className={`card-body text-${props.mode==='dark'?'light':'dark'}`} style={{backgroundColor : props.mode==='dark'?'#070F2B':'white' , borderBottomLeftRadius: '2%',borderBottomRightRadius: '2%'}}>
               <h5 className="card-title">{title}</h5>
               <p className="card-text">{description}</p>
               <p className="card-text"><small className="text-middle" style={{color : '#ababab'}}>By {author?author:'Unknown'} on {new Date(date).toGMTString()}</small></p>

@@ -1,7 +1,7 @@
 import React from 'react'
 // import {useState} from 'react'
 // import PropTypes from 'prop-types'
-import {  Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const Navbar = (props) => {
   // static propTypes = {
@@ -58,7 +58,7 @@ const Navbar = (props) => {
               </li> */}
               <li className="nav-item dropdown">
                 <Link className="nav-link dropdown-toggle" to="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Categories
+                  Categories
                 </Link>
                 <ul className="dropdown-menu">
                   <li><Link className="dropdown-item" to="/News-Rabbit/business">Business</Link></li>
@@ -70,9 +70,13 @@ const Navbar = (props) => {
                 </ul>
               </li>
             </ul>
-            <div className="form-check form-switch">
-              <input className="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault"  onClick={props.toggleMode}/>
-              <label className="form-check-label" htmlFor="flexSwitchCheckDefault" style={{marginRight:'1vw', color:'white'}}>Dark Mode</label>
+            <div className='mt-1 pe-3'>
+              <label class="ui-switch">
+                <input type="checkbox" onClick={props.toggleMode}/>
+                <div class="slider">
+                  <div class="circle"></div>
+                </div>
+              </label>
             </div>
             {/* <form className="d-flex" role="search">
               <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" value={text} onChange={handleOnChange}/>

@@ -29,7 +29,7 @@ const App = () => {
   const toggleMode = () => {
     if (mode === "light") {
       setMode("dark");
-      document.body.style.backgroundColor = 'rgb(27 26 37)';
+      document.body.style.backgroundColor = 'rgb(7 0 27)';
       document.body.style.color = 'white';
     } else {
       setMode("light");
